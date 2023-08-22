@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieRoller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="filter">
+        
+        <div class="search-div">
+            <h2>Search movie: </h2>
+            
+            <div style="display:flex; align-items:center;justify-content:center;width:100%;">
+                <input class="search-movie" type="text" placeholder="Search by title..." onkeyup="findMovies()">
+                <i class="fa-solid fa-magnifying-glass" style="position:absolute; margin-left:30rem;"></i>
+            </div>
+
+            <div class="search-list search-list-hide">
+                <!-- list items -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="div-movies hide">
+        <div class="btn-draw-div">
+            <button class="btn-draw hide">Raffle Selecteds</button>
+        </div>
+        <div class="movie-result">
+            <!-- Movies Insert -->
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/b91338c26a.js" crossorigin="anonymous"></script>
+</body>
+</html>
